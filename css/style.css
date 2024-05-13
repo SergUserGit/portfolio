@@ -29,47 +29,152 @@ p {
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1120px;
+
   padding-left: 10px;
   padding-right: 10px;
 }
 
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1120px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .container {
+    max-width: 280px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    max-width: 440px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 668px;
+  }
+}
+
 .main-title {
   font-weight: 700;
-  font-size: 82px;
   letter-spacing: 0.1em;
   color: #094348;
   font-family: "Roboto",
     sans-serif;
   text-align: center;
-  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-title {
+    margin-bottom: 40px;
+    font-size: 82px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .main-title {
+    margin-bottom: 35px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .main-title {
+    margin-bottom: 30px;
+    font-size: 33px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main-title {
+    margin-bottom: 31px;
+    font-size: 53px;
+  }
 }
 
 .project-list {
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(2, 355px) 1fr;
-  column-gap: 30px;
-  row-gap: 50px;
+
+}
+
+@media screen and (min-width: 1200px) {
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 355px) 1fr;
+    column-gap: 30px;
+    row-gap: 50px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .project-list {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    column-gap: 31px;
+    row-gap: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project-list {
+    display: grid;
+    grid-template-columns: 334px 1fr;
+    column-gap: 20px;
+    row-gap: 32px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 31px;
+  }
 }
 
 .project-ref {
   text-decoration: none;
   font-weight: 700;
-  font-size: 55px;
   letter-spacing: 0.1em;
   font-family: "Montserrat", sans-serif;
   color: #12828c;
   display: block;
   text-align: center;
+  transition: color 500ms linear;
+}
+
+@media screen and (min-width: 1200px) {
+  .project-ref {
+    font-size: 55px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .project-ref {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .project-ref {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project-ref {
+    font-size: 44px;
+  }
 }
 
 .project-item {
   cursor: pointer;
   border: 5px solid #094348;
   border-radius: 12px;
-  width: 355px;
-  height: 355px;
   box-shadow: inset 0 4px 4px 0 rgba(14, 99, 106, 0.5);
   background: #17a2ae;
   display: flex;
@@ -77,9 +182,65 @@ p {
   justify-content: center;
 }
 
-.main-section {
-  padding-top: 53px;
-  padding-bottom: 39px;
+@media screen and (min-width: 1200px) {
+  .project-item {
+    width: 355px;
+    height: 355px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .project-item {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .project-item {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project-item {
+    width: 334px;
+    height: 334px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-section {
+    padding-top: 53px;
+    padding-bottom: 39px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .main-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .main-section {
+    padding-top: 38px;
+    padding-bottom: 48px;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main-section {
+    padding-top: 38px;
+    padding-bottom: 33px;
+  }
+}
+
+.project-item:hover .project-ref {
+  color: #1b3650;
 }
 
 body {
