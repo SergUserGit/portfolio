@@ -45,6 +45,43 @@ p {
   margin-bottom: 40px;
 }
 
+.project-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 355px) 1fr;
+  column-gap: 30px;
+  row-gap: 50px;
+}
+
+.project-ref {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 55px;
+  letter-spacing: 0.1em;
+  font-family: "Montserrat", sans-serif;
+  color: #12828c;
+  display: block;
+  text-align: center;
+}
+
+.project-item {
+  cursor: pointer;
+  border: 5px solid #094348;
+  border-radius: 12px;
+  width: 355px;
+  height: 355px;
+  box-shadow: inset 0 4px 4px 0 rgba(14, 99, 106, 0.5);
+  background: #17a2ae;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-section {
+  padding-top: 53px;
+  padding-bottom: 39px;
+}
+
 body {
   background: rgba(106, 201, 209, 0.6);
 }
