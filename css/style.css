@@ -59,12 +59,33 @@ p {
 }
 
 .main-title {
+  animation-duration: 5000ms;
+  animation-name: colorchange;
+  animation-iteration-count: infinite;
   font-weight: 700;
   letter-spacing: 0.1em;
   color: #094348;
   font-family: "Roboto",
     sans-serif;
   text-align: center;
+}
+
+@keyframes colorchange {
+  from {
+    color: #3DE29B;
+  }
+
+  to {
+    color: #34C083;
+  }
+
+  60% {
+    color: #2B9E6C;
+  }
+
+  70% {
+    color: #227C55;
+  }
 }
 
 @media screen and (min-width: 1200px) {
